@@ -1,0 +1,46 @@
+Add this CSS to your stylesheet or inline styles
+
+.text-transition {
+  display: inline-block;
+  font-weight: 100;
+  font-size: 28px;
+  color: grey;
+  animation: fadeInOut 17s linear infinite;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 17s linear infinite;
+}
+
+.fade-out {
+  opacity: 0;
+  animation: fadeOut 17s linear infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

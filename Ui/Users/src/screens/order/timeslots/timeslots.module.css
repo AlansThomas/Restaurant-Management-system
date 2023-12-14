@@ -1,0 +1,13 @@
+.maindiv {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.timesnDate {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 10px 10px 10px;
+}

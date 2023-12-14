@@ -1,0 +1,41 @@
+.MasterDishes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 70%;
+    padding: 50px 5px 10px 5px;
+}
+
+.dishDIv {
+    padding: 10px 5px 10px 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 13rem;
+    cursor: pointer;
+    word-break: break-all;
+    opacity: 0;
+    animation: fadeInRightToLeft 2s ease-in-out forwards;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+@keyframes fadeInRightToLeft {
+    0% {
+        right: 100%;
+        opacity: 0;
+    }
+
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,133 @@
+.dishes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 14rem;
+}
+
+.shpImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    min-width: 20%;
+    max-width: 80%;
+    width: 400px;
+    padding: 1rem;
+    overflow-wrap: break-word;
+}
+
+.shopName {
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: cursive;
+    color: black;
+}
+
+.modal {
+    background-color: rgb(255, 255, 255);
+    width: 25%;
+    height: fit-content;
+    align-items: center;
+    padding-bottom: 30px;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    border-radius: 5px;
+}
+
+.modal h3 {
+    font-size: 1.3rem;
+    line-height: 1.1;
+    letter-spacing: -0.004em;
+    text-align: center;
+    font-weight: 600;
+    padding: 2vw;
+    justify-content: center;
+}
+
+.modal h3 svg {
+    float: right;
+}
+
+
+.feilds {
+    min-height: 80px;
+}
+
+.feildsLabel {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #4B5563;
+    padding-bottom: 0.25rem;
+    display: block;
+}
+
+.field {
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    width: 100%;
+    max-width: 120%;
+}
+
+.error {
+    color: #EF4444;
+    font-size: 0.875rem;
+}
+
+.Button {
+    display: flex;
+    gap: 3px;
+    flex-wrap: wrap;
+}
+.subBtn{
+    display: 'flex' !important;
+    justify-content: 'center' !important;
+    align-items: 'baseline' !important ;
+    margin-left: 38px !important;
+}
+.DishesMiandiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.dishContents {}
+
+
+
+@media only screen and (max-width: 599px) {
+
+    .modal {
+        width: 100%;
+        top: 0%;
+        left: 0;
+        height: 100%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .dishes {
+        justify-content: center;
+    }
+}

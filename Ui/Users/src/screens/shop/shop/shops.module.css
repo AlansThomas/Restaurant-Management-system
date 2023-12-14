@@ -1,0 +1,119 @@
+.shops {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 14rem;
+}
+
+.shpImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* .details {
+  display: flex;
+  flex-direction: column;
+  min-width: 20%;
+  max-width: 80%;
+  width: 370px;
+  padding: 1rem;
+  overflow-wrap: break-word;
+  cursor: pointer;
+} */
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  overflow-wrap: break-word;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeInRightToLeft 2s ease-in-out forwards;
+}
+
+
+.shopName {
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: cursive;
+}
+
+.raitings {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-color: rgb(38, 126, 62);
+  color: rgb(255, 255, 255);
+  height: 1.4rem;
+  max-width: 2.6rem;
+  padding: 0px 0.4rem;
+  font-size: .8rem;
+  border-radius: 0.3rem;
+  border: 1px solid rgb(38, 126, 62);
+}
+
+.raitingStar {
+  width: .8rem !important;
+}
+
+.shopDlt {
+  display: flex;
+}
+
+
+.shpDltname {
+  color: black;
+  font-weight: 500;
+}
+
+.showDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.509);
+  opacity: 0;
+  transition: opacity 1.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-break: break-all;
+}
+
+.showDiv p {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  visibility: hidden;
+}
+
+.showDiv:hover {
+  opacity: 1;
+}
+
+.showDiv:hover p {
+  font-weight: 600;
+  visibility: visible;
+}
+
+@keyframes fadeInRightToLeft {
+  0% {
+    right: 100%;
+    opacity: 0;
+  }
+
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}

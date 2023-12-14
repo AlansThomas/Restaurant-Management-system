@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* body::-webkit-scrollbar {
+    width: 0px;
+} */
+#root {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+ 
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:rgba(0, 0, 0, 0.509);
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.css-10d9dml-MuiTabs-indicator {
+    background-color: tomato !important;
+    width: 0.2rem !important;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: tomato !important;
+    background: rgb(248, 248, 248);
+}
+
+.css-187mznn-MuiSlider-root {
+    color: #afadad !important;
+}
+
+.css-1gv0vcd-MuiSlider-track {
+    color: tomato !important;
+}
+
+.css-eg0mwd-MuiSlider-thumb {
+    color: tomato !important;
+}
+
+.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+    height: fit-content !important;
+    max-height: 200px !important;
+}

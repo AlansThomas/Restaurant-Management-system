@@ -1,0 +1,103 @@
+.table-container {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* background-color: rgba(255, 99, 71, 0.483); */
+  height: fit-content;
+  padding-top: 20px;
+  align-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fadeInRightToLeft 2s ease-in-out forwards;
+}
+
+.table {
+  position: relative;
+  /* Make the table a positioning context */
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  max-width: fit-content;
+  height: fit-content;
+  max-height: fit-content;
+  padding: 10px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  grid-column: auto;
+  grid-row: auto;
+  border-radius: 10px;
+  font-size: 11px;
+  line-height: 0.3;
+  letter-spacing: 0.002em;
+  font-weight: 800;
+  font-style: normal;
+  background-color: #73dfbf0a;
+  border: 2px solid rgba(255, 99, 71, 0);
+}
+
+.tableSelected {
+  @apply table;
+  border: 2px solid rgb(0, 0, 0);
+
+}
+
+.table-top {
+  position: absolute;
+  cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  top: 10%;
+  width: 54%;
+  height: 80%;
+  border-radius: 8px;
+  color: white;
+  text-align: start;
+  background: rgb(56 48 48 / 33%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.2px);
+  -webkit-backdrop-filter: blur(2.2px);
+  border: 1px solid rgba(191, 223, 180, 0.49);
+}
+
+.chairs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8px;
+  position: relative;
+  z-index: 2;
+}
+
+.chair {
+  width: 30px;
+  height: 30px;
+  background-color: #1f6720;
+  border-radius: 50%;
+}
+
+.table-details {
+  padding: 5px;
+}
+
+.bookedTable {
+  background-color: #af413a;
+}
+
+.Notbooked {
+  background-color: #1f6720;
+}
+
+
+@keyframes fadeInRightToLeft {
+  0% {
+      right: 100%;
+      opacity: 0;
+  }
+
+  100% {
+      right: 0;
+      opacity: 1;
+  }
+}

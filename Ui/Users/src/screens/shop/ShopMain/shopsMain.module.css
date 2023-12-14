@@ -1,0 +1,16 @@
+.mainDiv {
+    position: relative;
+    top: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100%;
+}
+
+.shops {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding-top: 2rem;
+}

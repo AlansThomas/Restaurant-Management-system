@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.no-shops {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 3rem;
+    font-weight: 100;
+    color: grey;
+    margin-top: 10rem;
+}
+
+.addshopTexts{
+    line-height: 1.5;
+    font-size: 1rem;
+    font-family: Public Sans,sans-serif;
+    font-weight: 400;
+    color: #637381;
+}
+.errorShow{
+  height:21px;
+  color: red;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center
+}

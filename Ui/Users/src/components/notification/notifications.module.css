@@ -1,0 +1,29 @@
+.noti {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    color: black;
+    font-family: cursive;
+    font-size: .8rem;
+    padding: 5px 3px 5px 10px;
+    background-color: transparent;
+}
+
+.noti:hover{
+    background-color:rgba(48, 48, 48, 0.371);
+    color: white;
+}
+
+.notificationsDiv{
+ max-height: 500px;
+ overflow-y: hidden;   
+}
+
+.notificationsDiv::-webkit-scrollbar {
+    width: 3px; 
+    height: 40px;
+  }
+
+.notificationsDiv:hover{
+    overflow-y: scroll;
+}

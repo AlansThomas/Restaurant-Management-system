@@ -1,0 +1,131 @@
+.transition {
+    width: 97vw;
+    height: 97vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate 3s infinite ease;
+  }
+  
+  .circle {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .blue {
+    animation: tcForward 3s ease infinite;
+    background: #4285f4;
+  }
+  
+  .red {
+    animation: tcDown 3s ease infinite;
+    background: #ea4335;
+  }
+  
+  .yellow {
+    animation: tcReverse 3s ease infinite;
+    background: #fbbc05;
+  }
+  
+  .green {
+    animation: tcUp 3s ease infinite;
+    background: #34a853;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(90deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: rotate(270deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes tcForward {
+    0% {
+      transform: translateX(-55px) scale(0.55);
+    }
+    25% {
+      transform: translateX(0px) scale(1);
+    }
+    50% {
+      transform: translateX(-55px) scale(0.55);
+    }
+    75% {
+      transform: translateX(0px) scale(1);
+    }
+    100% {
+      transform: translateX(-55px) scale(0.55);
+    }
+  }
+  
+  @keyframes tcReverse {
+    0% {
+      transform: translateX(55px) scale(0.55);
+    }
+    25% {
+      transform: translateX(0px) scale(1);
+    }
+    50% {
+      transform: translateX(55px) scale(0.55);
+    }
+    75% {
+      transform: translateX(0px) scale(1);
+    }
+    100% {
+      transform: translateX(55px) scale(0.55);
+    }
+  }
+  
+  @keyframes tcUp {
+    0% {
+      transform: translateY(-55px) scale(0.55);
+    }
+    25% {
+      transform: translateY(0px) scale(1);
+    }
+    50% {
+      transform: translateY(-55px) scale(0.55);
+    }
+    75% {
+      transform: translateY(0px) scale(1);
+    }
+    100% {
+      transform: translateY(-55px) scale(0.55);
+    }
+  }
+  
+  @keyframes tcDown {
+    0% {
+      transform: translateY(55px) scale(0.55);
+    }
+    25% {
+      transform: translateY(0px) scale(1);
+    }
+    50% {
+      transform: translateY(55px) scale(0.55);
+    }
+    75% {
+      transform: translateY(0px) scale(1);
+    }
+    100% {
+      transform: translateY(55px) scale(0.55);
+    }
+  }
+  

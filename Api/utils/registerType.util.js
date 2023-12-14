@@ -1,0 +1,6 @@
+module.exports={
+ ADMIN:0,
+NORMAL_REGISTER:1,
+GOOGOLE_SIGN_UP:2
+   
+}
